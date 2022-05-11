@@ -18,9 +18,9 @@ export default function Characters(props){
                     </div>
                     <div> <h3>{character.name}</h3>
                     <h6>
-                        {character === "Alive" ? (
+                        {character.status === "Alive" ? (
                             <>
-                            <span className="Alive"/>
+                            <span className="alive"/>
                             Alive
                             </>
                         ) : (
@@ -31,11 +31,25 @@ export default function Characters(props){
                         )}
                     </h6>
                     <p className="text-grey"><span>Episodios:</span>
-                    <span>{character.episode.length}</span>
+                    <span>{character.episode.length}  </span>
                     </p>
                     <p>
                         <span className="text-grey">Especie:</span>
                         <span>{character.species}</span>
+                    </p>
+                    <p>
+                        <span className="text-grey">Genero:</span>
+                        <span>{character.gender}</span>
+                    </p>
+                    <p>
+                        <span className="text-grey">Nro.id: </span>
+                        <span>{character.id}</span>
+                    </p>
+                    <p>
+                        <span className="text-grey">Origen: </span>
+                        <span>{character.origin.name}</span><br></br>
+                        {/* <span className="text-grey">Url: </span>
+                        <span>{character.origin.url}</span> */}
                     </p>
                     </div> 
                     </div>
