@@ -84,7 +84,6 @@ function App() {
     setCharacters(characterApi.results);
     setProxPagina(characterApi.info.next);
     setVolverPagina(characterApi.info.prev);
-
   }
 
   const anterior = async()=>{
@@ -94,8 +93,6 @@ function App() {
     setCharacters(characterApi.results);
     setProxPagina(characterApi.info.next);
     setVolverPagina(characterApi.info.prev);
-
-
   }
 
 
