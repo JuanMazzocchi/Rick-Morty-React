@@ -2,6 +2,7 @@
 
 export default function Characters(props){
     const {characters, setCharacters} = props;
+    
 
     const resetCharacters =()=> {
          setCharacters(null)
@@ -18,17 +19,9 @@ export default function Characters(props){
                     </div>
                     <div> <h3>{character.name}</h3>
                     <h6>
-                        {character.status === "Alive" ? (
-                            <>
-                            <span className="alive"/>
-                            Alive
-                            </>
-                        ) : (
-                            <>
-                            <span className="dead"/>
-                            Dead 
-                            </>
-                        )}
+                        {(character.status === "Alive")? (<><span className="alive"/>Alive</>) : (<></>)}
+                        {(character.status === "Dead") ? (<><span className="dead"/>Dead</>) : (<></>)}
+                        {(character.status ==="Unknown") ? (<><span className="alive"/>Desconocido</>) : (<></>)}
                     </h6>
                     <p className="text-grey"><span>Episodios:</span>
                     <span>{character.episode.length}  </span>
@@ -52,7 +45,9 @@ export default function Characters(props){
                         <span>{character.origin.url}</span> */}
                     </p>
                     </div> 
+                    
                     </div>
+                     
                     
             ))}
             </div>
