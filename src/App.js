@@ -116,18 +116,18 @@ function App() {
        {episodios ? (<Episodios episodios={episodios} setEpisodios={setEpisodios}/>) : (<></>)}
      
        {characters ? (<div className="botonera">
-           <button onClick={anterior} className="btn-search"> Volver Pagina</button>
-           <button onClick={proxima} className="btn-search">Proxima Pagina</button>
+           <button onClick={anterior} className="btn-search boton"> Volver Pagina</button>
+           <button onClick={proxima} className="btn-search boton">Proxima Pagina</button>
         </div>) : (<></>)}
         
          
-        <div className="botonera">
-       <button onClick={reqApi} className="btn-search">Busqueda por episodio</button>
+        <div className="botonera2">
+       <button onClick={reqApi} className="btn-search boton">Busqueda por episodio</button>
         {/* {characters ? (<button onClick={proxima()}>next</button>) : ( <></>)} */}
        {/* <button onClick={reqApi3} className="btn-search">vivo/muerto & varon o mujer</button> */}
       
        
-        <button onClick={reqApi4} className="btn-search">Busqueda de personajes por pagina</button>
+        <button onClick={reqApi4} className="btn-search boton">Busqueda de personajes por pagina</button>
        </div>
        {/* {characters ? (<Nuevo characters={characters}  />) : (<p>nada aun</p>)} */}
         
@@ -144,7 +144,7 @@ function App() {
 
          </select>
        <div class="input-group-append">
-          <button class=" btn-search" type="button"  onClick={reqApi5}>Buscar</button>
+          <button class=" btn-search boton" type="button"  onClick={reqApi5}>Buscar</button>
        </div>
       </div>
        

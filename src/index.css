@@ -147,9 +147,11 @@ body {
     width: 150px;
   }
 }
-.botonera{
+.botonera, .botonera2{
   display: flex;
-   
-   
+  margin: 5px;
+}
+.boton{
+  margin: 3px;
 }
  
